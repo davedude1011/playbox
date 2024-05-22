@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../../../vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="../../../assets/dictionary-CxCNTFDr.js"></script>
+    <title>Playbox - Dictionary</title>
+    <script type="module" crossorigin src="../../../assets/dictionary-1_wLYVUI.js"></script>
     <link rel="modulepreload" crossorigin href="../../../assets/bootstrap-CS878lhi.js">
     <link rel="modulepreload" crossorigin href="../../../assets/useMounted-Di7MRrmH.js">
     <link rel="modulepreload" crossorigin href="../../../assets/Dropdown-BGYXMNVC.js">
@@ -22,6 +22,21 @@
   }
   .dropdown-menu.show {
     display: flex;
+  }
+  @keyframes hintloading
+{
+  0% {
+    opacity: 0.4;
+  }
+  50%  {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+  .breath {
+    animation: hintloading infinite forwards 10s;
   }
     </style>
     <div id="root"></div>
